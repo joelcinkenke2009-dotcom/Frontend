@@ -6,35 +6,72 @@
 <title>Comment suivre ses liens en Afrique gratuitement pour une durée limitée – la version payante arrive très bientôt</title>
 <meta name="description" content="TrackerLink : liens courts, modifiables après création, vérificateur 404, historique des clics. Gratuit maintenant.">
 <style>
-  body { margin:0; font-family: system-ui, -apple-system, Arial, sans-serif; background:#f7fafc; color:#0f172a; line-height:1.55; }
-  .wrap { max-width:720px; margin:0 auto; padding:24px; }
-  header { text-align:center; padding:32px 0 8px; }
-  h1 { font-size:1.6rem; margin:0 0 12px; }
-  p.lead { font-size:1.05rem; color:#334155; }
-  .card { background:#fff; border-radius:14px; padding:20px; margin:16px 0; box-shadow:0 6px 20px rgba(2,6,23,.06); }
-  ul { padding-left:18px; }
-  li { margin:8px 0; }
-  .cta { display:block; text-align:center; background:#0ea5e9; color:white; padding:14px 18px; border-radius:10px; text-decoration:none; font-weight:600; margin-top:12px; }
-  .cta:hover { background:#0284c7; }
-  footer { text-align:center; color:#64748b; font-size:.9rem; padding:24px 0; }
+  :root{
+    --bg:#f7fafc; --text:#0f172a; --muted:#475569; --card:#ffffff;
+    --brand:#0ea5e9; --brand-2:#0284c7; --accent:#10b981; --soft:#e0f2fe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+  .wrap{max-width:820px;margin:0 auto;padding:24px}
+  .hero{background:linear-gradient(135deg,var(--soft),#fff);border:1px solid #e5edf5;border-radius:18px;padding:28px;text-align:center}
+  .badge{display:inline-block;background:var(--accent);color:#042f2e;font-weight:800;padding:5px 10px;border-radius:999px;font-size:.75rem}
+  h1{font-size:1.9rem;margin:12px 0 8px}
+  p.lead{color:var(--muted);margin:0 auto;max-width:62ch}
+  .grid{display:grid;gap:16px;margin-top:18px}
+  @media(min-width:800px){.grid{grid-template-columns:1.1fr .9fr}}
+  .card{background:var(--card);border:1px solid #e6eef7;border-radius:16px;padding:20px;box-shadow:0 10px 30px rgba(2,6,23,.06)}
+  ul{padding-left:18px;margin:10px 0}
+  li{margin:10px 0}
+  .cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:12px;box-shadow:0 10px 22px rgba(14,165,233,.25)}
+  .cta:hover{background:var(--brand-2)}
+  .center{text-align:center}
+  blockquote{margin:12px 0;padding:12px 14px;background:#f0fdf4;border-left:4px solid var(--accent);border-radius:10px;color:#064e3b}
+  footer{text-align:center;color:var(--muted);font-size:.9rem;padding:24px 0}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
+  <div class="hero">
+    <span class="badge">Gratuit — adapté à l’Afrique</span>
     <h1>Comment suivre ses liens en Afrique gratuitement pour une durée limitée – la version payante arrive très bientôt</h1>
-    <p class="lead">Fini les liens morts et les stats perdues. Gérez, modifiez, vérifiez : tout au même endroit.</p>
-  </header>
+    <p class="lead">Tu perds tes stats à cause des liens morts ? Modifie l’URL après coup, vérifie les 404 et garde l’historique des clics, même si la page change.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Pourquoi TrackerLink ?</h2>
+      <p>On a tous vécu ça : lien partagé sur WhatsApp/Telegram/LinkedIn, 6 mois plus tard la page a bougé → <strong>404</strong> → stats perdues. TrackerLink agit comme un garde-fou.</p>
+      <ul>
+        <li>✂️ Liens courts et propres</li>
+        <li>🔄 Modifier l’URL même après création, sans perdre les clics</li>
+        <li>❌ Supprimer/nettoyer ton tableau de bord</li>
+        <li>🔍 Vérifier la destination avant de diffuser</li>
+      </ul>
+      <div class="center"><a class="cta" href="https://trackerlink.netlify.app" target="_blank" rel="noopener">👉 Essayer TrackerLink gratuitement</a></div>
+    </div>
+
+    <div class="card">
+      <h2>Cas concrets</h2>
+      <ul>
+        <li><strong>Créateur/créatrice</strong> : liens en bio qui pointent tantôt vers YouTube, tantôt vers un nouveau produit, sans changer de lien.</li>
+        <li><strong>Commerçant</strong> : flyers imprimés avec un lien modifiable même après l’impression si la page évolue.</li>
+        <li><strong>Équipe/CM</strong> : audit rapide de liens expirés avant une campagne.</li>
+      </ul>
+      <blockquote>« J’ai remplacé 5 anciens liens sans perdre les stats. Simple et clair. » — Testeur local</blockquote>
+    </div>
+  </div>
 
   <div class="card">
-    <p>On a tous vécu ça : tu partages un lien tracker sur des réseaux, et puis 6 mois plus tard, la page de destination n'existe plus (<strong>404</strong>). Résultat : tous tes clics et tes stats partent à la poubelle.</p>
-    <p>J’ai donc créé <strong>TrackerLink</strong> — pas juste un raccourcisseur, mais un <strong>gestionnaire de liens intelligent</strong> :</p>
-    <ul>
-      <li>✂️ Des liens courts et propres</li>
-      <li>🔄 Modification de l’URL de destination <strong>même après génération</strong> : changez le lien, gardez l’historique des clics</li>
-      <li>❌ Suppression des liens pour un tableau de bord clean</li>
-      <li>🔍 Vérificateur 404 intégré pour tester la page cible avant de partager</li>
-    </ul>
+    <h2>Mini-FAQ</h2>
+    <p><strong>Est-ce gratuit ?</strong> Oui aujourd’hui, retours bienvenus. La version payante arrive bientôt.</p>
+    <p><strong>Mes clics sont conservés ?</strong> Oui : tu changes l’URL, l’historique reste.</p>
+     </div>
+
+  <footer>© <span id="y"></span> TrackerLink — Gratuit aujourd’hui, retours bienvenus !</footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+  </html>    </ul>
     <p><strong>Bref : le couteau suisse du lien tracker.</strong> 100% gratuit pour le moment — j’aimerais beaucoup vos retours !</p>
     <a class="cta" href="https://trackerlink.netlify.app" target="_blank" rel="noopener">👉 Essayer TrackerLink gratuitement</a>
   </div>
